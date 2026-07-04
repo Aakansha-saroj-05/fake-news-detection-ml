@@ -187,30 +187,6 @@ fake-news-detection-ml
 
 ---
 
-## 🚀 How to Run
-
-### Clone Repository
-
-```bash
-git clone https://github.com/your-username/fake-news-detection-ml.git
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Open Notebook
-
-Run:
-
-```
-Fake_News_Detection.ipynb
-```
-
----
-
 ## 🔮 Future Improvements
 
 - Compare multiple Machine Learning models.
