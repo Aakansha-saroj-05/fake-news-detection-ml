@@ -1,198 +1,177 @@
 # 📰 Fake News Detection using Machine Learning
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?logo=scikitlearn)
-![NLP](https://img.shields.io/badge/NLP-TF--IDF-green)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+A machine learning project that classifies news articles as **Real** or **Fake** using Natural Language Processing (NLP) techniques and multiple supervised learning algorithms.
 
 ---
 
 ## 📌 Project Overview
 
-Fake news has become a major challenge in today's digital world. This project uses **Natural Language Processing (NLP)** and **Machine Learning** to automatically classify news articles as **Fake** or **Real**.
+The spread of fake news on digital platforms has become a major concern. This project applies **Natural Language Processing (NLP)** and **Machine Learning** to automatically identify whether a news article is real or fake.
 
-The project demonstrates the complete machine learning workflow, including data preprocessing, text cleaning, feature extraction, model training, evaluation, and prediction.
-
----
-
-## 🎯 Objectives
-
-- Build a machine learning model to classify fake and real news.
-- Apply Natural Language Processing techniques for text preprocessing.
-- Convert text into numerical features using TF-IDF.
-- Train and evaluate a Logistic Regression classifier.
-- Save the trained model for future predictions.
+The project compares the performance of multiple machine learning models and selects the best-performing model based on evaluation metrics.
 
 ---
 
-## 📂 Dataset
+## 🚀 Features
 
-This project uses the **Fake and Real News Dataset** consisting of two CSV files:
-
-- **Fake.csv**
-- **True.csv**
-
-Each news article contains:
-
-- Title
-- Text
-- Subject
-- Date
-
-After preprocessing:
-
-- Fake News → Label **0**
-- Real News → Label **1**
-
-> **Note:** The dataset is not included in this repository due to its size. You can download it from Kaggle.
+- Data Cleaning & Preprocessing
+- Exploratory Data Analysis (EDA)
+- Word Cloud Visualization
+- TF-IDF Vectorization
+- Train-Test Split
+- Multiple Machine Learning Models
+- Model Performance Comparison
+- Confusion Matrix Visualization
+- Classification Report
+- Custom News Prediction
+- Save Trained Model using Joblib
 
 ---
 
-## ⚙️ Technologies Used
+## 🛠️ Technologies Used
 
 - Python
 - Pandas
 - NumPy
 - Matplotlib
-- Seaborn
-- NLTK
 - Scikit-learn
 - WordCloud
 - Joblib
+- Google Colab
 
 ---
 
-## 🧠 Machine Learning Workflow
+## 🤖 Machine Learning Models
 
-```
-Dataset
-      │
-      ▼
-Data Cleaning
-      │
-      ▼
-Text Preprocessing
-      │
-      ▼
-Tokenization
-      │
-      ▼
-Stopword Removal
-      │
-      ▼
-Lemmatization
-      │
-      ▼
-TF-IDF Vectorization
-      │
-      ▼
-Train-Test Split
-      │
-      ▼
-Logistic Regression
-      │
-      ▼
-Model Evaluation
-      │
-      ▼
-Prediction
-```
+The following models were trained and evaluated:
+
+- Logistic Regression
+- Multinomial Naive Bayes
+- Random Forest Classifier
+- Linear Support Vector Machine (SVM)
 
 ---
 
-## ✨ Features
+## 📊 Evaluation Metrics
 
-- Data Cleaning
-- Missing Value Analysis
-- Exploratory Data Analysis
-- Text Preprocessing
-- Tokenization
-- Stopword Removal
-- Lemmatization
-- TF-IDF Feature Extraction
-- Logistic Regression Model
-- Accuracy Evaluation
-- Classification Report
-- Confusion Matrix
-- Word Cloud Visualization
-- News Prediction Function
-- Model Saving using Joblib
+Each model was evaluated using:
 
----
-
-## 📊 Model Performance
-
-The Logistic Regression model achieved excellent performance on the testing dataset.
-
-Evaluation Metrics include:
-
-- Accuracy
+- Accuracy Score
 - Precision
 - Recall
-- F1 Score
+- F1-Score
 - Confusion Matrix
+- Classification Report
 
-> Replace this section with your actual accuracy after training.
+The best-performing model was selected based on its overall accuracy and classification performance.
 
-Example:
+---
+
+## 📁 Project Structure
 
 ```
-Accuracy: 98.96%
-```
-
----
-
-## 📷 Project Screenshots
-
-### Dataset Distribution
-
-<img width="748" height="515" alt="image" src="https://github.com/user-attachments/assets/e26213db-c4dd-4449-83ca-a6c06b9b5098" />
-
-
----
-
-### Confusion Matrix
-
-<img width="662" height="582" alt="image" src="https://github.com/user-attachments/assets/2d5f79de-7657-4f9d-90b5-01fed5a8a1a8" />
-
-
----
-
-### Fake News Word Cloud
-
-<img width="721" height="383" alt="image" src="https://github.com/user-attachments/assets/b86127ce-20d4-4202-a472-05bb511b50df" />
-
-
----
-
-### Real News Word Cloud
-
-<img width="720" height="387" alt="image" src="https://github.com/user-attachments/assets/f7f392b0-afeb-419e-a7e5-7e04bce5afb0" />
-
-
----
-
-## 📁 Repository Structure
-
-```
-fake-news-detection-ml
+Fake-News-Detection/
 │
 ├── Fake_News_Detection.ipynb
 ├── README.md
-├── requirements.txt
-├── fake_news_model.pkl
-├── tfidf_vectorizer.pkl
-└── images
+├── fake.csv
+├── true.csv
+├── svm_fake_news_model.pkl
+├── images
+
 ```
 
 ---
 
-## 🔮 Future Improvements
+## ⚙️ Installation
 
-- Compare multiple Machine Learning models.
-- Deploy the model using Streamlit.
-- Add Deep Learning models (LSTM/BERT).
-- Create a web interface for real-time prediction.
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/Fake-News-Detection.git
+```
+
+Move into the project directory
+
+```bash
+cd Fake-News-Detection
+```
+
+Install the required libraries
+
+```bash
+pip install pandas numpy matplotlib scikit-learn wordcloud joblib
+```
+
+Run the notebook
+
+```bash
+jupyter notebook
+```
+
+or open it in **Google Colab**.
+
+---
+
+## 📈 Workflow
+
+1. Load Dataset
+2. Data Cleaning
+3. Exploratory Data Analysis
+4. TF-IDF Vectorization
+5. Train-Test Split
+6. Train Multiple ML Models
+7. Evaluate Each Model
+8. Compare Model Performance
+9. Visualize Results
+10. Predict Custom News
+11. Save Best Model
+
+---
+
+## 🔍 Example Prediction
+
+Input:
+
+```
+Scientists discover a new treatment that reduces cancer risk.
+```
+
+Output:
+
+```
+🟢 Real News
+```
+
+---
+
+## 🌱 Future Improvements
+
+- Deep Learning (LSTM)
+- BERT-based Fake News Detection
+- Streamlit Web Application
+- Flask REST API
+- Multilingual Fake News Detection
+- Real-time News Verification
+
+---
+
+## 📷 Project Results
+
+The project includes:
+
+- Word Clouds
+  <img width="712" height="382" alt="image" src="https://github.com/user-attachments/assets/8d2a7f1d-a48f-47de-a69d-0f49549de399" />
+  <img width="707" height="377" alt="image" src="https://github.com/user-attachments/assets/269462cc-fd6b-4379-875f-72b2e27175df" />
+
+- Model Accuracy Comparison
+  <img width="707" height="528" alt="image" src="https://github.com/user-attachments/assets/d64b8b58-2471-4643-b9aa-b6ccbfc9bae2" />
+
+- Confusion Matrix
+  <img width="638" height="562" alt="image" src="https://github.com/user-attachments/assets/3cf7483b-f18b-41cc-8c44-77f39fc4dd68" />
+
+- Classification Reports
+  <img width="678" height="358" alt="image" src="https://github.com/user-attachments/assets/1db601aa-bbad-4d5a-8367-139eccb6b08e" />
 
 ---
 
@@ -200,16 +179,6 @@ fake-news-detection-ml
 
 **Aakansha Saroj**
 
-B.Tech Electronics & Communication Engineering (AI)
+Feel free to connect with me and explore more of my projects!
 
-Indira Gandhi Delhi Technical University for Women (IGDTUW)
-
-GitHub: https://github.com/Aakansha-saroj-05
-
-LinkedIn: https://www.linkedin.com/in/aakansha-saroj-120a46329
-
----
-
-## ⭐ Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
+⭐ If you found this project useful, consider giving it a star.
