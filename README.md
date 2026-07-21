@@ -166,12 +166,15 @@ The project includes:
   <img width="707" height="377" alt="image" src="https://github.com/user-attachments/assets/269462cc-fd6b-4379-875f-72b2e27175df" />
 
 - Model Accuracy Comparison
+
   <img width="707" height="528" alt="image" src="https://github.com/user-attachments/assets/d64b8b58-2471-4643-b9aa-b6ccbfc9bae2" />
 
 - Confusion Matrix
+
   <img width="638" height="562" alt="image" src="https://github.com/user-attachments/assets/3cf7483b-f18b-41cc-8c44-77f39fc4dd68" />
 
 - Classification Reports
+
   <img width="678" height="358" alt="image" src="https://github.com/user-attachments/assets/1db601aa-bbad-4d5a-8367-139eccb6b08e" />
 
 ---
